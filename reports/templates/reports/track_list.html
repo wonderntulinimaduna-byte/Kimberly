@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Track Issues</title>
+</head>
+<body>
+    <h1>Your Reports</h1>
+    {% if reports %}
+        <ul>
+        {% for report in reports %}
+            <li>{{ report.category }} - Status: {{ report.get_status_display }} - {{ report.created_at }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No reports yet.</p>
+    {% endif %}
+    <a href="{% url 'home' %}">Back to Home</a>
+</body>
+</html>

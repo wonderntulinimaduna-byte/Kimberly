@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Service Reporting App</title>
+</head>
+<body>
+    <h1>Welcome to City Service Reporting</h1>
+    {% if user.is_authenticated %}
+        <p>Hello, {{ user.username }}!</p>
+        <a href="{% url 'create_report' %}">Report Issue</a>
+        <a href="{% url 'track_reports' %}">Track Issues</a>
+        <a href="{% url 'logout' %}">Logout</a>
+    {% else %}
+        <a href="{% url 'login' %}">Sign In</a>
+        <a href="{% url 'signup' %}">Sign Up</a>
+        <a href="/admin/">Admin</a>
+    {% endif %}
+</body>
+</html>
