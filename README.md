@@ -1,21 +1,40 @@
-# Kimberly
+# Kimberly Fixers App (Django Project)
 
-HCI Assignment - City Service Reporting App
+## 📌 Description
+Kimberly Fixers is a service reporting web application developed using Django. 
+The system allows local residents to report municipal issues such as water leaks, 
+potholes, electricity faults, and waste collection problems.
 
-## Setup
+The platform focuses on improving user experience through clear feedback, 
+simple navigation, and visible issue tracking.
 
-1. Install Python 3 and pip.
-2. Install dependencies: `pip install django pillow`
-3. Run migrations: `python manage.py migrate`
-4. Create superuser: `python manage.py createsuperuser`
-5. Run server: `python manage.py runserver`
+---
 
-## Features
+## 🎯 Features
+- Report issues (water, electricity, potholes, waste)
+- Upload images as evidence
+- Automatic location capture
+- Track issue status (Received, In Progress, Resolved)
+- Notifications and updates
+- Search and filter reports
 
-- User registration and login
-- Report issue submission with photo upload
-- Track submitted reports
-- Admin panel for management
+---
+
+## 👥 Target Users
+- Community members reporting service delivery issues
+- Local business owners tracking infrastructure problems
+
+---
+
+## ⚙️ Technologies Used
+- Python
+- Django
+- HTML, CSS
+- SQLite (default database)
+
+---
+
+
 
 ## GitHub Repository
 
